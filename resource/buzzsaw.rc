@@ -1,0 +1,46 @@
+#include <windows.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Version
+/////////////////////////////////////////////////////////////////////////////
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,1,1
+ PRODUCTVERSION 0,0,1,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040004e4"
+        BEGIN
+            VALUE "FileVersion",      "0.0.1\0"
+            VALUE "ProductVersion",   "0.0.1\0"
+            VALUE "OriginalFilename", "buzzsaw.vst3\0"
+#if SMTG_PLATFORM_64
+            VALUE "FileDescription",  "Buzzsaw VST3 (64Bit)\0"
+            VALUE "InternalName",     "Buzzsaw VST3 (64Bit)\0"
+            VALUE "ProductName",      "Buzzsaw VST3 (64Bit)\0"
+#else
+            VALUE "FileDescription",  "Buzzsaw VST3 (32Bit)\0"
+            VALUE "InternalName",     "Buzzsaw VST3 (32Bit)\0"
+            VALUE "ProductName",      "Buzzsaw VST3 (32Bit)\0"
+#endif
+            VALUE "CompanyName",      "Exco\0"
+            VALUE "LegalCopyright",   "© 2019 Steinberg Media Technologies\0"
+            VALUE "LegalTrademarks",  "VST is a trademark of Steinberg Media Technologies GmbH\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x400, 1252
+    END
+END
